@@ -47,6 +47,7 @@ def generate_pac(proxy):
 				|| (/gsp.+(\.ls)?\.apple\.com/.test(url))
 				|| (/podcasts\.apple\.com(:[0-9]+)?/.test(url))
 				|| (/routerlogin\.net/.test(url))
+				|| (/^https?\:\/\/([\w,\d,\_]+\.)?ghconduit\.com/.test(url))
 				|| (/\\b([0-9]{1,3})\.([0-9]{1,3})\.([0-9]{1,3})\.([0-9]{1,3})\\b/.test(host))) {
 				return 'DIRECT';
 			}
