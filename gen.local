@@ -1,0 +1,6 @@
+#!/bin/sh
+
+# ./pacgen_v2ex -x "SOCKS5 127.0.0.1:1047" -f flora.chrome.local.pac
+# ./pacgen_v2ex -x "SOCKS 127.0.0.1:1047" -f flora.safari.local.pac
+
+./pacgen_v2ex -x "SOCKS5 127.0.0.1:1047; SOCKS 127.0.0.1:1047" -f flora.local.pac
